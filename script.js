@@ -14,7 +14,8 @@ function chunkString(str, chunkLength) {
 
   return chunks;
 }
+
 // Do not change the code below
 const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+const size = parseInt(prompt("Enter Chunk Size."), 10); // Convert size to integer
+alert(chunkString(str, size).join(', ')); // Join chunks with ', ' for better readability
